@@ -8,11 +8,13 @@ import {
 import Home from "./views/home";
 import Projects from './views/projects';
 import About from './views/about';
+import { ScrollToTop } from './components/scrollToTop';
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
