@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { classNames } from "../utils";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -101,7 +102,7 @@ export default function Navbar() {
             onClick={toggleMenu}
           >
             <svg
-              className={`w-6 h-6 text-gray-500 hover:text-green-500`}
+              className={`w-6 h-6 text-gray-500 hover:text-blue-500`}
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -124,7 +125,9 @@ export default function Navbar() {
           <li>
             <a
               href="/about"
-              className="block text-sm px-2 py-4 text-white bg-green-500 font-semibold dark:text-darkText"
+              className={classNames(
+                activeItem === "about" ? "block text-sm px-2 py-4 text-white bg-blue-500 font-semibold" : "block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+              )}
             >
               About
             </a>
@@ -132,17 +135,11 @@ export default function Navbar() {
           <li>
             <a
               href="/projects"
-              className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 dark:hover:bg-darkBackground"
+              className={classNames(
+                activeItem === "projects" ? "block text-sm px-2 py-4 text-white bg-blue-500 font-semibold" : "block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+              )}
             >
               Projects
-            </a>
-          </li>
-          <li>
-            <a
-              href="/test"
-              className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 dark:hover:bg-darkBackground"
-            >
-              Test
             </a>
           </li>
         </ul>

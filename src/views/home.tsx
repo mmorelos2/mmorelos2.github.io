@@ -23,7 +23,7 @@ export default function Home() {
         <div className="mt-2 flex space-x-4">
           {/* LinkedIn */}
           <a
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/mario-morelos/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:glitch text-[32px] hover:scale-[1.15]"
@@ -34,7 +34,7 @@ export default function Home() {
 
           {/* GitHub */}
           <a
-            href="https://www.github.com/"
+            href="https://github.com/mmorelos2"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:glitch text-[32px] hover:scale-[1.15]"

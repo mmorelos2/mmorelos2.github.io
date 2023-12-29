@@ -3,19 +3,34 @@ import Project from "../components/project";
 const calculatorProject = {
   imgPath: "images/projects-calculator.png",
   title: "Calculator App",
-  description: "A simple calculator app with basic arithmetic functions.",
-  aboutLink: "https://example.com/about",
-  demoLink: "https://example.com/demo",
-  githubLink: "https://github.com/example/calculator",
+  githubLink: "https://github.com/mmorelos2/SimpleCalculator",
+};
+
+const snakeProject = {
+  imgPath: "images/projects-snake.png",
+  title: "Snake Clone",
+  demoLink: "https://replit.com/@MarioMorelos1/Snake?v=1",
+  githubLink: "https://github.com/mmorelos2/Snake",
+};
+
+const jwtProject = {
+  imgPath: "images/projects-JWT.png",
+  title: "JWT Generator",
+  githubLink: "https://github.com/mmorelos2/JWT-Basic-App",
+};
+
+const todoListProject = {
+  imgPath: "images/projects-todo.png",
+  title: "To-Do List",
+  githubLink: "https://github.com/mmorelos2/To-Do-List",
 };
 
 export default function Projects() {
   const projects = [
+    todoListProject,
+    jwtProject,
     calculatorProject,
-    calculatorProject,
-    calculatorProject,
-    calculatorProject,
-    calculatorProject,
+    snakeProject,
   ];
 
   return (

@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 type ProjectProps = {
   imgPath: string;
   title: string;
-  description: string;
   aboutLink?: string;
   demoLink?: string;
   githubLink?: string;
@@ -13,7 +12,6 @@ type ProjectProps = {
 export default function Project({
   imgPath,
   title,
-  description,
   aboutLink,
   demoLink,
   githubLink,
@@ -23,12 +21,10 @@ export default function Project({
       <img
         src={imgPath}
         alt={title}
-        className="w-full"
-        style={{ height: "300px" }}
+        className="w-[270px] h-[300px]"
       />
       <div className="p-4">
         <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
-        <p className="text-gray-600">{description}</p>
         <div className="mt-4 flex">
           {aboutLink && (
             <a
