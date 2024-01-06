@@ -80,7 +80,7 @@ export default function About() {
     <div className="flex flex-grow flex-col px-4 flex-wrap mt-8">
       <div className="mx-auto max-w-6xl w-full mb-6">
         <h1 className="text-3xl font-bold mb-4">About Me</h1>
-        <div className="flex items-center justify-between flex-wrap-reverse">
+        <div className="flex justify-between flex-wrap-reverse">
           <div className="w-[530px]">
             <p className="ml-6">
               Hey there! 👋 I'm Mario Morelos, currently pursuing a computer
@@ -109,10 +109,10 @@ export default function About() {
           </div>
           <div className="flex flex-grow items-center justify-center w-1/3">
             <img
-              src="images/projects-calculator.png"
-              alt="Profile Picture"
+              src="images/about-me-pic.jpg"
+              alt="About Me Picture"
               className="rounded-lg shadow-md mb-4"
-              style={{ width: "500px", height: "auto" }}
+              style={{ width: "auto", height: "360px" }}
             />
           </div>
         </div>
