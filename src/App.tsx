@@ -9,18 +9,19 @@ import Home from "./views/home";
 import Projects from './views/projects';
 import About from './views/about';
 import { ScrollToTop } from './components/scrollToTop';
+import { HashRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <Navbar />
       <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+    </HashRouter>
   );
 }
 

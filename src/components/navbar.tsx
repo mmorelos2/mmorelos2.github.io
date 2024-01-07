@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
         <div className="hidden md:flex">
           {/* Desktop Logo */}
-          <a href="." className="flex items-center py-4 px-2 hover:scale-[1.1] transition duration-100">
+          <a href="#" className="flex items-center py-4 px-2 hover:scale-[1.1] transition duration-100">
             {activeItem === "home" ? (
               <>
                 <p className="glitch">
@@ -48,7 +48,7 @@ export default function Navbar() {
         </div>
         {/* Mobile Logo */}
         <div className="md:hidden">
-          <a href="." className="flex items-center py-4 px-2 hover:scale-[1.1] transition duration-100">
+          <a href="/#" className="flex items-center py-4 px-2 hover:scale-[1.1] transition duration-100">
 
               <>
                 <p className="glitch">
@@ -61,7 +61,7 @@ export default function Navbar() {
         {/* Desktop Navbar items */}
         <div className="hidden md:flex items-center space-x-1">
           <a
-            href="/about"
+            href="/#/about"
             className={`py-4 px-2 font-semibold hover:scale-[1.1] transition duration-100`}
           >
             {activeItem === "about" ? (
@@ -78,7 +78,7 @@ export default function Navbar() {
             )}
           </a>
           <a
-            href="/projects"
+            href="/#/projects"
             className={`py-4 px-2 font-semibold hover:scale-[1.1] transition duration-100`}
           >
             {activeItem === "projects" ? (
@@ -124,7 +124,7 @@ export default function Navbar() {
         <ul>
           <li>
             <a
-              href="/about"
+              href="/#/about"
               className={classNames(
                 activeItem === "about" ? "block text-sm px-2 py-4 text-white bg-blue-500 font-semibold" : "block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
               )}
@@ -134,7 +134,7 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="/projects"
+              href="/#/projects"
               className={classNames(
                 activeItem === "projects" ? "block text-sm px-2 py-4 text-white bg-blue-500 font-semibold" : "block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
               )}
