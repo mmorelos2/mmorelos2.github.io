@@ -18,11 +18,7 @@ export default function Project({
 }: ProjectProps) {
   return (
     <div className="max-w-xs mx-auto bg-white rounded-lg overflow-hidden shadow-lg mb-8">
-      <img
-        src={imgPath}
-        alt={title}
-        className="w-[270px] h-[300px]"
-      />
+      <img src={imgPath} alt={title} className="w-[270px] h-[300px]" />
       <div className="p-4">
         <h2 className="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
         <div className="mt-4 flex">

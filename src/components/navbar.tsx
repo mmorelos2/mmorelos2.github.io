@@ -31,7 +31,10 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
         <div className="hidden md:flex">
           {/* Desktop Logo */}
-          <a href="#" className="flex items-center py-4 px-2 hover:scale-[1.1] transition duration-100">
+          <a
+            href="#"
+            className="flex items-center py-4 px-2 hover:scale-[1.1] transition duration-100"
+          >
             {activeItem === "home" ? (
               <>
                 <p className="glitch">
@@ -48,14 +51,16 @@ export default function Navbar() {
         </div>
         {/* Mobile Logo */}
         <div className="md:hidden">
-          <a href="/#" className="flex items-center py-4 px-2 hover:scale-[1.1] transition duration-100">
-
-              <>
-                <p className="glitch">
-                  <span aria-hidden="true">M</span>M
-                  <span aria-hidden="true">M</span>
-                </p>
-              </>
+          <a
+            href="/#"
+            className="flex items-center py-4 px-2 hover:scale-[1.1] transition duration-100"
+          >
+            <>
+              <p className="glitch">
+                <span aria-hidden="true">M</span>M
+                <span aria-hidden="true">M</span>
+              </p>
+            </>
           </a>
         </div>
         {/* Desktop Navbar items */}
@@ -126,7 +131,9 @@ export default function Navbar() {
             <a
               href="/#/about"
               className={classNames(
-                activeItem === "about" ? "block text-sm px-2 py-4 text-white bg-blue-500 font-semibold" : "block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+                activeItem === "about"
+                  ? "block text-sm px-2 py-4 text-white bg-blue-500 font-semibold"
+                  : "block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
               )}
             >
               About
@@ -136,7 +143,9 @@ export default function Navbar() {
             <a
               href="/#/projects"
               className={classNames(
-                activeItem === "projects" ? "block text-sm px-2 py-4 text-white bg-blue-500 font-semibold" : "block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
+                activeItem === "projects"
+                  ? "block text-sm px-2 py-4 text-white bg-blue-500 font-semibold"
+                  : "block text-sm px-2 py-4 hover:bg-blue-500 hover:text-white transition duration-300"
               )}
             >
               Projects
