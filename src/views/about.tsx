@@ -15,8 +15,7 @@ import {
   Typescript,
 } from "../components/skill-svg";
 
-
-const workAmazon = {
+const expAmazon = {
   companyName: "Amazon",
   jobTitle: "Software Development Engineer Intern",
   dateWorked: "May 2023 - Aug 2023",
@@ -26,16 +25,15 @@ const workAmazon = {
       the <b>software development lifecycle</b>. Over <b>12 weeks</b>, I led a
       project that heavily relied on extensive <b>cross-team collaboration</b>.
       Employing the <b>Amazon SDK v2</b> and <b>Kotlin</b>, I orchestrated the{" "}
-      <b>creation</b> and <b>administration</b> of <b>S3</b>,<b>Lambda</b>, and{" "}
-      <b>DynamoDB</b> resources. This experience illuminated the paramount
-      significance of robust <b>design documentation</b> and{" "}
-      <b>transparent communication</b>
-      in ensuring project alignment and success.
+      <b>creation</b> of <b>S3</b>,<b>Lambda</b>, and <b>DynamoDB</b> resources.
+      This experience illuminated the paramount significance of robust{" "}
+      <b>design documentation</b> and <b>transparent communication</b> in
+      ensuring project alignment and success.
     </>
   ),
 };
 
-const workBaptist = {
+const expBaptist = {
   companyName: "CSCE 430: Software Engineering",
   jobTitle: "Software Engineer",
   dateWorked: "Aug 2023 - Dec 2023",
@@ -57,7 +55,7 @@ const workBaptist = {
   ),
 };
 
-const workPos = {
+const expPos = {
   companyName: "CSCE 315: Programming Studio",
   jobTitle: "Backend/Frontend Software Engineer",
   dateWorked: "Aug 2022 - Dec 2022",
@@ -71,6 +69,23 @@ const workPos = {
       Transitioning to a <b>frontend</b> role in version two, I focused on{" "}
       <b>React</b> components facilitating item selection and checkout on a{" "}
       <b>dynamic</b> page.
+    </>
+  ),
+};
+
+const expSRE = {
+  companyName: "CSCE 431: Software Reverse Engineering",
+  jobTitle: "Reverse Engineer",
+  dateWorked: "Aug 2023 - Dec 2023",
+  description: (
+    <>
+      In the CSCE 431: Software Reverse Engineering course, I delved into the
+      intricate world of <b>binary files</b>, employing sophisticated <b>binary
+      exploitation</b> methods such as <b>stack overflows</b>, <b>heap overflows</b>, <b>stack-based
+      code execution</b>, and <b>binary patching</b>. Utilizing <b>Ghidra</b> and <b>GDB</b>, I adeptly
+      conducted <b>dynamic and static analyses</b>. Additionally, I familiarized myself
+      with <b>x86-64</b> and <b>x86-32</b> ASM instructions, gaining a comprehensive
+      understanding of low-level code intricacies.
     </>
   ),
 };
@@ -120,9 +135,10 @@ export default function About() {
       <div className="mx-auto max-w-6xl w-full mb-4">
         <h1 className="text-3xl font-bold mb-4">Experience</h1>
         <ul className="list-none m-0 p-0">
-          <Experience {...workBaptist} />
-          <Experience {...workAmazon} />
-          <Experience {...workPos} />
+          <Experience {...expSRE} />
+          <Experience {...expBaptist} />
+          <Experience {...expAmazon} />
+          <Experience {...expPos} />
         </ul>
       </div>
       <div className="flex flex-col flex-wrap mx-auto max-w-6xl w-full mb-4">
